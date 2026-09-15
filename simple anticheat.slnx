@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="simple anticheat.vcxproj" />
+  <Project Path="simple anticheat.vcxproj" Id="bee9c96a-fa52-47bd-80ed-7537a8a5d33e" />
 </Solution>

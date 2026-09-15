@@ -4,3 +4,4 @@
 #include <iostream>
 #include <memory>
 #include "Process.h"
+#include "LOG.h"
