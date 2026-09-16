@@ -2,3 +2,4 @@ simple anticheat/
 .vs/
 x86/
 x64/
+*.user

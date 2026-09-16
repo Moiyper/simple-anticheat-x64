@@ -5,3 +5,4 @@
 #include <memory>
 #include "Process.h"
 #include "LOG.h"
+const std::string path = "injector.dll";

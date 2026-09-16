@@ -4,7 +4,16 @@ class FRIEND_PROCESS {
 private:
 	DWORD pid;
 	HANDLE hprocess;
+	std::string path;
 public:
+	void SetPath_exe() {
+		std::string path_exe;
+		std::cin >> path_exe;
+		path = path_exe;
+	}
+	std::string WritePath_exe(std::string& saved_path) {
+		return saved_path = path;
+	}
 	void GetPIDProcess() {
 		DWORD new_pid;
 		std::cin >> new_pid;
@@ -20,10 +29,11 @@ public:
 	HANDLE WriteHandle(HANDLE& saved_h) {
 		return saved_h = hprocess;
 	}
-	void Inject(HANDLE& h, DWORD& pid) {
+	void Inject(HANDLE& h, std::path) {
 		try {
 			if (!h) throw std::runtime_error("INVALID HANDLE PROCESS!");
-
+			if(CreateProcessW())
+			if(VirtualAllocEx(h, ))
 		}
 		catch (std::exception& e) {
 			std::cout << e.what() << "\nLast error: " << GetLastError() << std::endl;
@@ -36,7 +46,8 @@ public:
 
 struct ENEMY_PROCESS {
 	void operator()(DWORD PID, std::string& name) const {
-		
+		TerminateProcess(hprocess, 0);
+		CloseHandle(enemy_process);
 	}
 	std::string name;
 	DWORD pid;
