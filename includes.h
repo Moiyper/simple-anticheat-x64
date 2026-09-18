@@ -3,6 +3,6 @@
 #include <string>
 #include <iostream>
 #include <memory>
-#include "Process.h"
+const std::string path_dll = "injector.dll";
 #include "LOG.h"
-const std::string path = "injector.dll";
+#include "Process.h"
